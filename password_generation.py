@@ -14,21 +14,34 @@ while count.isdigit() == False:
     count = input('Сколько нужно сгенирировать паролей: ')
 
 length = input('Укажите длину пароля: ')
-
 while length.isdigit() == False:
     print('Укажите число')
     length = input('Укажите длину пароля: ')
 
 add_digits = input('Включить цифры? (Y/N): ')
-
 while add_digits.lower() not in ['y', 'n']:
     print('Укажите "Y" или "N"')
     add_digits = input('Включить цифры? (Y/N): ')
 
-# add_lowercase_letters = input('Включать строчные буквы? (Y/N): ')
-# add_uppercase_letters = input('Включать прописные буквы? (Y/N): ')
-# add_punctuation = input('Включать специальные символы "!#$%&*+-=?@^_"? (Y/N): ')
-# rmv_bad_symbols = input('Исключить символы il1Lo0O? (Y/N):' ).strip()
+add_lowercase_letters = input('Включать строчные буквы? (Y/N): ')
+while add_lowercase_letters.lower() not in ['y', 'n']:
+    print('Укажите "Y", "N"')
+    add_lowercase_letters = input('Включать строчные буквы? (Y/N): ')
+
+add_uppercase_letters = input('Включать прописные буквы? (Y/N): ')
+while add_uppercase_letters.lower() not in ['y', 'n']:
+    print('Укажите "Y", "N"')
+    add_uppercase_letters = input('Включать прописные буквы? (Y/N): ')
+
+add_punctuation = input('Включать специальные символы "!#$%&*+-=?@^_"? (Y/N): ')
+while add_punctuation.lower() not in ['y', 'n']:
+    print('Укажите "Y", "N"')
+    add_punctuation = input('Включать специальные символы "!#$%&*+-=?@^_"? (Y/N): ')
+
+rmv_bad_symbols = input('Исключить символы il1Lo0O? (Y/N):' ).strip()
+while rmv_bad_symbols.lower() not in ['y', 'n']:
+    print('Укажите "Y", "N"')
+    rmv_bad_symbols = input('Исключить символы il1Lo0O? (Y/N):')
 # end options
 
 
