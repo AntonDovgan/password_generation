@@ -2,7 +2,7 @@
 # Password generator
 `Eng` <br>
 The generator will help you create a series of secure passwords of any length.  During the generation, you will be asked to specify several parameters:
-1. how many passwords do I need;
+1.  how many passwords are needed;
 2. length;
 3. include or exclude lowercase/uppercase letters or special characters `!#$%&*+-=?@^_`;
 4. remove the implicit characters `il1Lo0O'.
